@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_translate/core/translation/translation_keys.dart';
 import 'package:get_translate/pages/home_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
