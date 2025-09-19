@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_translate/core/translation/translation_keys.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -8,26 +9,29 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('title_app'.tr),
+        title: Text(TranslateKey.titleApp.tr()),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('welcome'.trParams({'name': 'Enzo'})),
+            Text(TranslateKey.welcome.trParams({'name': 'Enzo'})),
             Text(
-              'user_list_title_simple'.trPlural(
-                'user_list_title_simple_plutal',
-                1,
+              TranslateKey.userListTitleSimple.trPlural(1),
+            ),
+            Text(
+              TranslateKey.userListTitleSimple.trPlural(2),
+            ),
+            Text(
+              TranslateKey.userListTitle.trPluralParams(
+                {'total': '5'},
+                2,
               ),
             ),
             Text(
-              'user_list_title'.trPluralParams(
-                'user_list_title_plural',
+              TranslateKey.userListTitle.trPluralParams(
+                {'total': '1'},
                 1,
-                {
-                  'total': '1',
-                },
               ),
             ),
             const SizedBox(
