@@ -38,15 +38,23 @@ class HomePage extends StatelessWidget {
               height: 20,
             ),
             ElevatedButton(
-                onPressed: () {
-                  Get.updateLocale(Locale('en', 'US'));
-                },
-                child: Text('Alterar US')),
+              onPressed: () {
+                Get.updateLocale(Locale('en', 'US'));
+              },
+              child: Text('Alterar US'),
+            ),
             ElevatedButton(
-                onPressed: () {
-                  Get.updateLocale(Locale('pt', 'BR'));
-                },
-                child: Text('Alterar BR')),
+              onPressed: () {
+                Get.updateLocale(Locale('pt', 'BR'));
+              },
+              child: Text('Alterar BR'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.updateLocale(Locale('es', 'ES'));
+              },
+              child: Text('Alterar ES'),
+            ),
           ],
         ),
       ),
